@@ -36,16 +36,8 @@ public class SimulatorApp implements OpcodeSimulator{
     }
 
     private void process(String command){
-        deb("command " + command);
         String ops[] = command.split(SPACE_DELIMITTER);
         Instruction ins = instructionFactory.get(ops[0]);
-
-        System.out.println("Ops : ");
-        for(String s : ops) System.out.print(s + " ");
-        System.out.println();
-
-//        deb("Got Instruction : " + ins.toString());
-
         ins.process(ops, registerState);
     }
 
