@@ -1,5 +1,13 @@
 package org.opcode.instruction;
 
+import org.opcode.instruction.instructionTypes.Add;
+import org.opcode.instruction.instructionTypes.Adr;
+import org.opcode.instruction.instructionTypes.Dcr;
+import org.opcode.instruction.instructionTypes.Inr;
+import org.opcode.instruction.instructionTypes.Move;
+import org.opcode.instruction.instructionTypes.Rst;
+import org.opcode.instruction.instructionTypes.Set;
+
 public class InstructionFactory {
 
     public Instruction get(String operation){
